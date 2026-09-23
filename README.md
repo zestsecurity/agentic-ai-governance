@@ -61,6 +61,12 @@ Each validated gap becomes a prioritized backlog item with evidence, risk, contr
 
 The repository includes a read-only Payment Dispute Triage Skill contract. It demonstrates explicit scope, prohibited actions, data and authorization boundaries, structured outputs, testing expectations, logging, versioning, and lifecycle controls.
 
+## Runnable Demonstration
+
+The [`examples/payment-dispute-triage`](examples/payment-dispute-triage/) folder contains a small local demonstration using fictional, masked dispute data. It uses the Microsoft Agent Governance Toolkit to allow one read-only triage action and deny other actions by default, including refunds and account updates. Run it with `python demo.py` from that folder after installing the toolkit with `python -m pip install "agent-governance-toolkit[full]"`.
+
+This demonstrates policy enforcement around a mock tool call. It does not inspect `SKILL.md`, connect to a bank, or prove production controls. The sample does not use real customer information, credentials, or payment systems.
+
 ## About Zest Ventures
 
 Zest Ventures provides enterprise architecture, AI governance, information security, and transformation delivery support for enterprise and regulated-industry clients.
